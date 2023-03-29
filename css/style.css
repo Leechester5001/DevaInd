@@ -148,6 +148,7 @@ h6 {
 --------------------------------------------------------------*/
 
 #header {
+  justify-content: center;
   height: 110px;
   transition: all 0.5s;
   z-index: 997;
@@ -171,6 +172,7 @@ h6 {
 
 #header.header-scrolled #topbar,
 #header.header-pages #topbar {
+  
   display: none;
 }
 
@@ -183,18 +185,26 @@ h6 {
   font-weight: 400;
   letter-spacing: 3px;
   text-transform: uppercase;
+ align-items: left;
+  
 }
 
 #header .logo h1 a,
 #header .logo h1 a:hover {
   color: #413e66;
   text-decoration: none;
+  vertical-align:sub ;
+  align-content:left;
+  justify-content: left;
+
 }
 
 #header .logo img {
   padding: 0;
   margin: 0px 0;
-  max-height: 43px;
+  max-height: 55px;
+  justify-content:left;
+  
 }
 
 .main-pages {
@@ -472,7 +482,7 @@ h6 {
   text-align: center;
   font-weight: 700;
   position: relative;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Tinos", serif;
 }
 
 .section-header p {
@@ -656,6 +666,14 @@ h6 {
   color: #413e66;
   margin-bottom: 5px;
 }
+#why-us .why-us-content .features h5 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-left: 56px;
+  color: #2c2868;
+  margin-bottom: 5px;
+}
+
 
 #why-us .why-us-content .features p {
   font-size: 16px;
@@ -1285,6 +1303,8 @@ h6 {
 
 #footer .footer-top .footer-links ul li {
   padding: 8px 0;
+  display:inline;
+  padding: 10px;
 }
 
 #footer .footer-top .footer-links ul li:first-child {
@@ -1505,9 +1525,9 @@ h6 {
   }
   #header .logo img {
     padding: 0;
-   
-    max-height: 30px;
-    vertical-align: top;
+    max-height: 40px;
+    top: calc(100% - 30px);
+    vertical-align:super;
   }
 
   #faq #faq-list a {
